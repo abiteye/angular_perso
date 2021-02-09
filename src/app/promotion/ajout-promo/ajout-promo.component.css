@@ -1,0 +1,14 @@
+.form-container{
+    background: #7BCDDA;
+    width: 40%;
+}
+.btnColor{
+    background:  #F57629 ;
+}
+.btn-back{
+    background: red;
+}
+.card{
+    width: 75%;
+    height: 150px;
+}

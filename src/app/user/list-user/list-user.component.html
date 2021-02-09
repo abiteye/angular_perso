@@ -1,0 +1,38 @@
+<div class="container border border-dark mt-4 p-3">
+  <img id="" src="" alt="admin" class="rounded-circle border border-info">
+  <h3 class="text-center">Liste des utilisateurs</h3>
+  <hr>
+  <a [routerLink]="['/users/add']">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="float-right">
+      <path fill-rule="evenodd"
+            d="M11.75 4.5a.75.75 0 01.75.75V11h5.75a.75.75 0 010 1.5H12.5v5.75a.75.75 0 01-1.5 0V12.5H5.25a.75.75 0 010-1.5H11V5.25a.75.75 0 01.75-.75z"></path>
+    </svg>
+  </a>
+  <table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>Avatar</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Mail</th>
+                <th>Profil</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.photo}}</td>
+                <td>{{user.nom}}</td>
+                <td>{{user.prenom}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.profil}}</td>
+                <td>
+                  <a [routerLink]="[]" class="">Détails -</a>
+                  <a [routerLink]="[]" class=""> Editer -</a>
+                  <a [routerLink]="[]" class=""> Supprimer</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

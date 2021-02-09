@@ -1,0 +1,47 @@
+<div class="form-container rounded m-3">
+    <form class="">
+        <fieldset>
+          <div class="form-group row p-3">
+            <label for="exampleSelect1">Groupe de<br> compétences</label>
+            <div class="col-sm-8 ml-auto">
+                <select class="form-control" id="choice">
+                    <option>Sélectionner un groupe de compétence</option>
+                    <option>Développer le back-end d'une appli</option>
+                    <option>Développer le front-end d'une appli</option>
+                    <option>Maquetter une application</option>
+                  </select>
+            </div>
+          </div>
+          <div class="form-group row p-3">
+            <label for="libelle">Libellé</label>
+            <div class="col-sm-8 ml-auto">
+                <input type="text" class="form-control" id="libelle"  placeholder="Saisir un libelle">
+            </div>
+          </div>
+          <label></label>
+          <p class="d-flex justify-content-center align-items-center">
+            <button class="btn btn-info m-2" type="button" data-toggle="collapse" data-target=".multi-collapse" 
+                    aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Niveau 1</button>
+            <button class="btn btn-info m-2" type="button" data-toggle="collapse" data-target=".multi-collapse" 
+                    aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Niveau 2</button>
+            <button class="btn btn-info m-2" type="button" data-toggle="collapse" data-target=".multi-collapse" 
+                    aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Niveau 3</button>
+          </p>
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <textarea class="form-control ml-2" rows="4">
+                </textarea>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <textarea class="form-control " rows="4">
+                </textarea>
+              </div>
+            </div>
+          </div>
+              <button type="submit" class="btn btnColor float-right">Créer</button>
+        </fieldset>
+      </form>
+</div>

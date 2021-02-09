@@ -1,0 +1,18 @@
+.form-container{
+    background-color: #7BCDDA;
+    width: 45%;
+}
+.btnColor{
+    background:  #F57629;
+}
+
+.form-control-avatar {
+    background-color: #f8fdfd;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin-top: -60%;
+    margin-left: 120%;
+    border-radius: 50%;
+    border: #338F8E 2px solid;
+}

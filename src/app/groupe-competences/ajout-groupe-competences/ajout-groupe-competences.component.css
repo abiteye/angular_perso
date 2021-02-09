@@ -1,0 +1,11 @@
+.form-container{
+    background: #7BCDDA;
+    width: 100%;
+    height: 500px;
+}
+.btnColor{
+    background:  #338F8E;
+}
+.form-check{
+    margin-left: 8rem;
+}

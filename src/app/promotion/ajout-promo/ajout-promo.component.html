@@ -1,0 +1,82 @@
+<div class="container form-container rounded">
+    <form class="">
+        <fieldset>
+          <legend class="text-center">Créer une promotion</legend>
+          <hr>
+          <div class="form-group row p-3">
+            <label for="exampleSelect1">Langue</label>
+            <div class="col-sm-8 ml-auto">
+                <select class="form-control" id="choice">
+                    <option>Choisissez une langue</option>
+                    <option>Anglais</option>
+                    <option>Français</option>
+                  </select>
+            </div>
+          </div>
+          <div class="form-group row p-3">
+            <label for="titre">Titre</label>
+            <div class="col-sm-8 ml-auto">
+                <input type="text" class="form-control" id="titre"  placeholder="Saisir un titre">
+            </div>
+          </div>
+          <div class="form-group row p-3">
+            <label for="description">Description</label>
+            <div class="col-sm-8 ml-auto">
+                <input type="text" class="form-control" id="description" placeholder="Décrire la promo">
+            </div>
+          </div>
+          <div class="form-group row p-3">
+            <label for="lieu">Lieu</label>
+            <div class="col-sm-8 ml-auto">
+                <input type="text" class="form-control" id="lieu" placeholder="Donner le lieu">
+            </div>
+          </div>
+          <div class="form-group row p-3">
+            <label for="reference">Référence Agate</label>
+            <div class="col-sm-8 ml-auto">            
+                <input type="text" class="form-control" id="reference" placeholder="Donner la référence">
+            </div>
+          </div>
+          <div class="form-group row p-3">
+            <label for="exampleSelect1">Fabrique</label>
+            <div class="col-sm-8 ml-auto">
+                <select class="form-control" id="exampleSelect1">
+                    <option>Choisissez une fabrique</option>
+                    <option>Orange Digital Center</option>
+                    <option>Technopole</option>
+                </select>
+            </div>
+          </div>
+          <div class="form-group row p-3">
+              <label for="date">Date de début</label>
+              <div class="col-sm-4 ml-auto">
+                <input type="date" class="form-control" id="date" placeholder="Donner la date">
+              </div>
+            <label for="date">Date de fin</label>
+            <div class="col-sm-4">
+                <input type="date" class="form-control" id="date" placeholder="Donner la date">
+            </div>
+          </div>
+          <div class="form-group row p-3">
+            <label for="referentiel">Référentiel</label>
+            <div class="col-sm-8 ml-auto">
+                <select class="form-control" id="referentiel">
+                    <option>Ajouter un référentiel</option>
+                    <option>Data Artisan</option>
+                    <option>Dévéloppement Web et Mobile</option>
+                    <option>Référent Digital</option>
+                    <option></option>
+                </select>
+            </div>
+          </div>
+          <div class="card ml-auto">
+            <div class="card-body">
+                <img class="img-fluid" src="" alt="l'mage de la promo">
+                <input name="photo" id="photo" class="form-control-file btn rounded mt-5" type="file" value="">
+            </div>
+          </div>
+              <button type="submit" class="btn btn-back">Retour</button>
+              <button type="submit" class="btn btnColor float-right">Créer</button>
+        </fieldset>
+      </form>
+</div>

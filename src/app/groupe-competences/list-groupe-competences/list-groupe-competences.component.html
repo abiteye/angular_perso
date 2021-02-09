@@ -1,0 +1,13 @@
+<div class="container-fluid mt-5 rounded border border-info">
+    <h3 class="text-center">Liste des groupes de compétences</h3>
+    <a [routerLink]="['/groupecompetences/add']">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="float-right">
+          <path fill-rule="evenodd"
+                d="M11.75 4.5a.75.75 0 01.75.75V11h5.75a.75.75 0 010 1.5H12.5v5.75a.75.75 0 01-1.5 0V12.5H5.25a.75.75 0 010-1.5H11V5.25a.75.75 0 01.75-.75z">
+          </path>
+        </svg>
+      </a>
+    <div class="row">
+        <app-item-groupe-competence *ngFor="let g of groupes" class="col-sm-2 m-2 shadow" [groupe]="g"></app-item-groupe-competence>
+</div>
+</div>

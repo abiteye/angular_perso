@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-dark ">
+    <a class="navbar-brand" [routerLink]="['/admin']">
+        <img src="../assets/img/logo_nav.png" width="60" height="60" alt="Logo SA" class="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/admin']">Accueil
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/admin']">Briefs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/admin']">Rendus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/admin']">Forum</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="drop" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Paramètres
+          </a>
+          <div class="dropdown-menu" aria-labelledby="drop">
+            <a class="dropdown-item" [routerLink]="['/promotion/add']">Promos</a>
+            <a class="dropdown-item" [routerLink]="['/referentiel/add']">Référentiels</a>
+            <a class="dropdown-item" [routerLink]="['/groupecompetences']">Groupe de compétences</a>
+            <a class="dropdown-item" [routerLink]="['/competences/add']">Compétences</a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="drop" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Utilisateurs
+          </a>
+          <div class="dropdown-menu" aria-labelledby="drop">
+            <a class="dropdown-item" [routerLink]="['/users']">Utilisateurs</a>
+            <a class="dropdown-item" [routerLink]="['#']">Profil</a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </li>
+      </ul>
+      <div class="col-sm-8 ml-auto">
+        <input class="form-control col-4 " type="text" placeholder="Rechercher par ici">
+      </div>
+        <button type="button" class="btn btnColor float-right rounded" (click)="logout()">Déconnecter</button>
+    </div>
+  </nav>
